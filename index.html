@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head class="general_encriptador">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+<body class="body">
+    <header class="header_superior"> 
+        <img src="/img/Logo.png" alt="logo de aluta latam">
+        <h1 class="titulo_pagina">ALURA LATAM</h1>
+    </header>
+
+    <main>
+        
+
+
+        <div class="contenido_principal">  
+            <h2 class="subtitulo_bienvenida"> Bienvenido al encriptador de texto</h2>
+            <div><p class="subtitulo_instrucciones">No usar signos ni mayusculas! </p></div>
+            <textarea name="texto" id="texto" class="contenedor_mensaje_encriptar" cols="30" rows="10" placeholder="ingrese el texto a encriptar"></textarea>
+        
+       
+
+        <div class="botones">
+            <button onclick ="encriptar();" type="button" class="boton_encriptar" id="encriptar">Encriptar</button>
+            <button onclick="desencriptar();" class="boton_desencriptar" id="desencriptar">Desencriptar</button>
+            
+        </div>
+
+
+        <div class="seccion_resultados">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <img src="/img/Muñeco.png" alt="imagen Muñeco">
+                <h2 id="titulo_encriptado" >texto Desencriptado</h2>
+                <p id="parrafo" >ningun mensaje fue encontrado</p>
+                <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="contenedor_mensaje_desencriptado"placeholder="No se registra texto"></textarea>-->
+                
+            </div>
+        </div>
+
+        
+        <footer class="creador">hecho por: carlos leonardo lopez </footer>
+    </main>
+
+    
+</body>
+<script src="funcionality.js"></script>
+
+</html>

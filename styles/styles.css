@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario:  #f3f5fc;
+    --color-secundario: #1E2A5E;
+    --color-terciario: #495057;
+    --fuente-inter: "Inter", sans-serif;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.header_superior img{
+    padding-top: 2%;
+}
+
+.titulo_pagina{
+    font-size: 210%;
+    padding-top: 2%;
+}
+.subtitulo_bienvenida{
+    display: flex;
+    left: 8%;
+    position: absolute;
+    padding-top: 2%;
+}
+
+body{
+
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: solid;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.header_superior{
+    align-items: center;
+    display: flex;
+    font-family: var(--fuente-inter);
+    font-Weight:400;
+    font-size: 1.5em;
+    line-height: 1em;
+    left: 12%;
+    top: 5%;
+}
+
+.contenido_principal{
+    font-family: var(--fuente-inter);
+    font-Weight:400;
+    font-size: 1em;
+}
+
+.seccion_resultados{
+    
+    
+    padding-left: 8%;
+    margin-left: 50%;
+    display: flex;
+    background-color: #f3f5fc;
+    border-style:solid;
+    border-radius: 2em;
+    width: 30%; 
+    height: 90%;
+    left: 70%;
+    top: 5%;
+    right: 10%;
+    box-shadow: 0px 20px 30px -8px;
+    padding-bottom: 5%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center
+
+   
+}
+
+.mensaje_encriptado{
+    
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 1em;
+    width: 50%;
+    text-align: center;
+}
+.mensaje_encriptado h2{
+
+    line-height: 120%;
+    font-family: var(--fuente-inter);
+    font-size: normal;
+    font-weight: 700;
+    font-size: 24;
+    align-items: center;
+}
+
+.mensaje_encriptado p{
+
+    color: var(--color-terciario);
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-size: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    }
+
+.seccion_resultados img{
+    
+    width: 150%;
+    height: 200%;
+    top: 15%;
+    
+}
+
+
+.botones{
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap: 1em;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 84%;
+    
+    
+}
+.boton_encriptar{
+    box-sizing: border-box;
+    border: 2px solid var(--color-secundario);
+    width: 25%;
+    align-items: center;
+    border-radius: 1em;
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-secundario);
+    justify-content: center;
+    padding: 2%;
+    gap: 0.8em;
+    line-height: 1.3em;
+    text-align: center;
+
+
+}
+.boton_desencriptar{
+    border: 2px solid var(--color-secundario);
+    width: 25%;
+    text-align: center;
+    border-radius: 1em;
+    font-family: var(--fuente-inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    gap: 0.8em;
+    line-height: 1.3em;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    flex-direction: row;
+}
+
+.boton_desencriptar:hover,
+.boton_encriptar:hover{
+    margin: 0.3%;
+    width: 24,5%;
+    padding: 1.8%;
+
+}
+.contenedor_mensaje_desencriptar{
+    margin-top: 0%;
+    margin-right: 35%;
+    width: 200%;
+    height: 50%;
+    
+
+    
+}
+.contenedor_mensaje_encriptar{
+    position: absolute;
+    margin: auto;
+    bottom: 10%;
+    width: 35%;
+    height: 50%;
+    left: 10%;
+    top: 15%;
+    border: none;
+    font-family: var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    background-color: var(--color-primario);
+
+}
+.contenedor_mensaje_encriptar::placeholder{
+    color: var(--color-secundario);
+}
+.contenedor_mensaje_encriptar:focus,
+contenedor_mensaje_encriptar:active{
+    border: none;
+    outline: none;
+}
+.contenedor_mensaje_desencriptado{
+    border: none;
+    font-family: var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em
+    
+
+}
+
+.contenedo_mensaje_desencriptado:focus,
+.contenedo_mensaje_desencriptado:active{
+    border: none;
+    outline: none;
+}
+.subtitulo_instrucciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+.subtitulo_instrucciones p{
+    font-family: var(--fuente-inter);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-terciario);
+    order: 1;
+    flex-grow: 0;
+    opacity: 0.8;
+    flex: none;
+    
+}
+
+.creador{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1em;
+    top: 100%;
+    width: 100%;
+    position:absolute;
+}
+
+
+@media (max-width: 930px) {
+    .body {
+        display: flex;
+        flex-direction: row;
+      }
+    .contenido_principal {
+      width: 100%;
+    }
+    .header_superior{
+        width: 100%;   
+        margin-top: 0%;
+        margin-bottom: 100%;
+    }
+    .texto {
+      width: 80%;
+      height: 60%;
+      left: 10%;
+      top: 5%;
+    }
+    .subtitulo_instrucciones {
+      width: 80%;
+      left: 10%;
+      top: 70%;
+    }
+    .subtitulo_instrucciones p {
+      font-size: 16px;
+    }
+    .botones {
+      width: 80%;
+      left: 10%;
+      top: 75%;
+    }
+    .boton_encriptar,
+    .boton_desencriptar {
+      width: 48%;
+      border-radius: 16px;
+    }
+    .boton-encriptar:hover,
+    .boton-desencriptar:hover {
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
+    }
+    .seccion_resultados {
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
+    }
+    .parrafo {
+      width: 100%;
+      top: 5%;
+    }
+    .seccion_resultados img {
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+
+
+
